@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 
-class MapviewPage extends Component {
+class Mapview extends Component {
   render() {
     return (
       <div>
-        <h1>Mapview Page</h1>
+        <h1>Mapview</h1>
       </div>
     );
   }
 }
 
-export default MapviewPage;
+export default Mapview;
