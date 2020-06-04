@@ -43,12 +43,15 @@ export default function App() {
       <h2>Email: {email}</h2>
       <img src={url} alt={name} />
       {loggedIn ? (
-        <GoogleLogout
-          clientId={CLIENT_ID}
-          buttonText="Logout"
-          onLogoutSuccess={logout}
-          onFailure={handleLogoutFailure}
-        ></GoogleLogout>
+        <div>
+          <GoogleLogout
+            clientId={CLIENT_ID}
+            buttonText="Logout"
+            onLogoutSuccess={logout}
+            onFailure={handleLogoutFailure}
+          ></GoogleLogout>
+          <button>create PDF</button>
+        </div>
       ) : (
         <GoogleLogin
           clientId={CLIENT_ID}
